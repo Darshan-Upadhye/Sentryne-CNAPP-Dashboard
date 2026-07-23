@@ -1,4 +1,4 @@
-<img width="50" height="50" alt="Image" src="https://github.com/user-attachments/assets/8b341c9a-05d2-4ad7-8b54-629cbced66e9" />
+<img width="100" height="100" alt="Image" src="https://github.com/user-attachments/assets/8b341c9a-05d2-4ad7-8b54-629cbced66e9" />
 
 # Sentryne · CNAPP Dashboard
 
