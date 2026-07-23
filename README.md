@@ -1,4 +1,8 @@
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/524fa5e8-d1e7-4c03-84bf-792b23b3fe66" />
+
 # Sentryne · CNAPP Dashboard
+
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/524fa5e8-d1e7-4c03-84bf-792b23b3fe66" />
 
 A configurable, widget-based security dashboard built with React. Every widget on the page is driven by data, not hardcoded JSX: categories and widgets
 come from a JSON config, live in a Zustand store, and can be added, removed, and searched entirely
