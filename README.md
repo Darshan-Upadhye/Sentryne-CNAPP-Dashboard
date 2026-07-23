@@ -160,7 +160,7 @@ flexbox, which keeps the bundle small and made it easier to theme them exactly t
 - Widget data for the seeded charts is illustrative (per the assignment brief); custom widgets are
   free-text, exactly as specified.
 
-  ## 9. Screenshots
+## 9. Screenshots
 
 <img width="1365" height="641" alt="Image" src="https://github.com/user-attachments/assets/06b71491-f514-4864-85f7-eb573215f45f" />
 
