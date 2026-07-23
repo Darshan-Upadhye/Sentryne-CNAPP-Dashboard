@@ -1,0 +1,166 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "tabLabel": "CSPM",
+      "name": "CSPM Executive Dashboard",
+      "description": "Posture and account coverage across every connected cloud.",
+      "accent": "indigo",
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "type": "donut",
+          "active": true,
+          "data": {
+            "total": 4,
+            "segments": [
+              { "label": "Connected", "value": 2, "tone": "indigo" },
+              { "label": "Not Connected", "value": 2, "tone": "indigo-faint" }
+            ]
+          }
+        },
+        {
+          "id": "cloud-risk-assessment",
+          "name": "Cloud Account Risk Assessment",
+          "type": "donut",
+          "active": true,
+          "data": {
+            "total": 9812,
+            "segments": [
+              { "label": "Failed", "value": 1720, "tone": "danger" },
+              { "label": "Warning", "value": 640, "tone": "warning" },
+              { "label": "Not available", "value": 42, "tone": "neutral" },
+              { "label": "Passed", "value": 7410, "tone": "success" }
+            ]
+          }
+        },
+        {
+          "id": "compliance-score",
+          "name": "Compliance Score by Framework",
+          "type": "bar",
+          "active": false,
+          "data": {
+            "totalLabel": "Frameworks tracked",
+            "total": 6,
+            "segments": [
+              { "label": "CIS Benchmark", "value": 92, "tone": "success" },
+              { "label": "SOC 2", "value": 78, "tone": "warning" },
+              { "label": "ISO 27001", "value": 64, "tone": "danger" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "tabLabel": "CWPP",
+      "name": "CWPP Dashboard",
+      "description": "Runtime signals from workloads across every cluster.",
+      "accent": "teal",
+      "widgets": [
+        {
+          "id": "namespace-alerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "type": "empty",
+          "active": true,
+          "data": { "message": "No graph data available!" }
+        },
+        {
+          "id": "workload-alerts",
+          "name": "Workload Alerts",
+          "type": "empty",
+          "active": true,
+          "data": { "message": "No graph data available!" }
+        },
+        {
+          "id": "runtime-threats",
+          "name": "Runtime Threat Detections",
+          "type": "empty",
+          "active": false,
+          "data": { "message": "No graph data available!" }
+        }
+      ]
+    },
+    {
+      "id": "registry",
+      "tabLabel": "Image",
+      "name": "Registry Scan",
+      "description": "Vulnerability posture for every scanned image.",
+      "accent": "amber",
+      "widgets": [
+        {
+          "id": "image-risk-assessment",
+          "name": "Image Risk Assessment",
+          "type": "stackedBar",
+          "active": true,
+          "data": {
+            "totalLabel": "Total Vulnerabilities",
+            "total": 1470,
+            "segments": [
+              { "label": "Critical", "value": 9, "tone": "danger" },
+              { "label": "High", "value": 150, "tone": "warning-strong" },
+              { "label": "Medium", "value": 430, "tone": "warning" },
+              { "label": "Low", "value": 881, "tone": "neutral" }
+            ]
+          }
+        },
+        {
+          "id": "image-security-issues",
+          "name": "Image Security Issues",
+          "type": "stackedBar",
+          "active": true,
+          "data": {
+            "totalLabel": "Total Images",
+            "total": 2,
+            "segments": [
+              { "label": "Critical", "value": 2, "tone": "danger" },
+              { "label": "High", "value": 2, "tone": "warning-strong" },
+              { "label": "Medium", "value": 5, "tone": "warning" },
+              { "label": "Low", "value": 9, "tone": "neutral" }
+            ]
+          }
+        },
+        {
+          "id": "registry-coverage",
+          "name": "Registry Scan Coverage",
+          "type": "empty",
+          "active": false,
+          "data": { "message": "No graph data available!" }
+        }
+      ]
+    },
+    {
+      "id": "tickets",
+      "tabLabel": "Ticket",
+      "name": "Ticketing Overview",
+      "description": "Remediation work tracked in your ticketing tool.",
+      "accent": "violet",
+      "widgets": [
+        {
+          "id": "tickets-by-severity",
+          "name": "Open Tickets by Severity",
+          "type": "stackedBar",
+          "active": false,
+          "data": {
+            "totalLabel": "Open Tickets",
+            "total": 58,
+            "segments": [
+              { "label": "Critical", "value": 6, "tone": "danger" },
+              { "label": "High", "value": 14, "tone": "warning-strong" },
+              { "label": "Medium", "value": 21, "tone": "warning" },
+              { "label": "Low", "value": 17, "tone": "neutral" }
+            ]
+          }
+        },
+        {
+          "id": "ticket-aging",
+          "name": "Ticket Aging",
+          "type": "empty",
+          "active": false,
+          "data": { "message": "No graph data available!" }
+        }
+      ]
+    }
+  ]
+}
